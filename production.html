@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Crossover Zone - How It Is Made</title>
+  <link rel="stylesheet" href="css/portal.css">
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 70px 20px 50px;
+      color: #ffffff;
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at 50% 40%, rgba(98, 40, 158, 0.32), transparent 28%),
+        radial-gradient(ellipse at 20% 80%, rgba(25, 112, 180, 0.28), transparent 35%),
+        radial-gradient(ellipse at 85% 15%, rgba(165, 55, 150, 0.24), transparent 32%),
+        linear-gradient(135deg, #060818 0%, #11113a 48%, #08091d 100%) fixed;
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      inset: -50%;
+      pointer-events: none;
+    }
+
+    body::before {
+      background-image:
+        radial-gradient(circle, rgba(255,255,255,.95) 0 1px, transparent 1.5px),
+        radial-gradient(circle, rgba(160,195,255,.8) 0 1px, transparent 1.5px),
+        radial-gradient(circle, rgba(255,220,180,.75) 0 1.2px, transparent 1.8px);
+      background-size: 160px 160px, 230px 230px, 310px 310px;
+      background-position: 20px 30px, 80px 100px, 140px 50px;
+      opacity: .8;
+    }
+
+    body::after {
+      background:
+        radial-gradient(circle at 18% 22%, #fff 0 2px, transparent 3px),
+        radial-gradient(circle at 72% 68%, #cfe1ff 0 1px, transparent 2px),
+        radial-gradient(circle at 54% 12%, #ffdcb8 0 1.5px, transparent 2.5px),
+        radial-gradient(circle at 88% 34%, #fff 0 1px, transparent 2px),
+        radial-gradient(circle at 35% 82%, #fff 0 1.5px, transparent 2.5px);
+      filter: drop-shadow(0 0 5px rgba(255,255,255,.8));
+    }
+
+    .back-link {
+      position: relative;
+      z-index: 2;
+      display: block;
+      width: min(900px, calc(100% - 40px));
+      margin: 0 auto 18px;
+      color: #ffd76a;
+      font-weight: bold;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 4px;
+    }
+
+    .back-link:hover,
+    .back-link:focus-visible {
+      color: #ffffff;
+      text-shadow: 0 0 12px #ffd76a;
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      width: min(900px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 44px 52px;
+      text-align: center;
+      border: 1px solid rgba(183, 210, 255, .24);
+      border-radius: 24px;
+      background: rgba(5, 7, 29, .66);
+      box-shadow: 0 20px 70px rgba(0, 0, 0, .45), inset 0 0 35px rgba(112, 92, 210, .12);
+      backdrop-filter: blur(8px);
+    }
+
+    h1 {
+      margin: 0 0 28px;
+      font-size: clamp(2.2rem, 6vw, 4.5rem);
+      line-height: 1;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      text-shadow: 0 0 20px rgba(159, 182, 255, .65);
+    }
+
+    h2 {
+      margin: 32px 0 14px;
+      color: #ffd76a;
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+    }
+
+    p {
+      max-width: 680px;
+      margin: 0 auto;
+      color: #f4f5ff;
+      font-size: clamp(1.08rem, 2.2vw, 1.28rem);
+      line-height: 1.75;
+    }
+
+    .tools {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .tool {
+      padding: 22px 16px;
+      border: 1px solid rgba(183, 210, 255, .18);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, .035);
+    }
+
+    .tool strong {
+      display: block;
+      margin-bottom: 8px;
+      color: #ffd76a;
+      font-size: 1.25rem;
+    }
+
+    .tool span { color: #f4f5ff; }
+
+    @media (max-width: 650px) {
+      body { padding: 30px 10px; }
+      main, .back-link { width: calc(100% - 20px); }
+      main { padding: 32px 22px; }
+      .tools { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <a class="back-link" href="index.html">← Go back to main site</a>
+
+  <main>
+    <h1>How The Crossover Zone Is Made</h1>
+
+    <p>
+      The Crossover Zone is created using Garry's Mod for scenes, character models,
+      animation, and machinima-style filming.
+    </p>
+
+    <div class="tools" aria-label="Production tools">
+      <div class="tool">
+        <strong>Garry's Mod</strong>
+        <span>Used to build scenes and make the show.</span>
+      </div>
+
+      <div class="tool">
+        <strong>Video Software</strong>
+        <span>The video-making and editing software has not been decided yet.</span>
+      </div>
+    </div>
+
+    <h2>Editing</h2>
+    <p>
+      The recorded footage will be combined with video editing software yet to be decided,
+      along with any other editing needed for the final episodes.
+    </p>
+
+    <h2>Assets</h2>
+    <p>
+      All assets used to create The Crossover Zone come from the Steam Workshop.
+      Assets based on characters or worlds from the featured franchises remain owned
+      by the respective creators and owners of those intellectual properties.
+    </p>
+  </main>
+
+  <script src="javascript/portal.js" defer></script>
+</body>
+</html>
